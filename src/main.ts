@@ -1,7 +1,7 @@
 import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
+import { iShopSubscriptions } from './ishop'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -20,5 +20,22 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </p>
   </div>
 `
+// // CREACION DE UN OBSERVABLE "Fuente de Datos"
+// const myObservable = new Observable((subscriber) => {
+//   subscriber.next('Hola');
+// });
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+// // SUSCRIPCION AL OBSERVABLE
+// myObservable.subscribe({
+//   next:(data)=>{
+//     console.log(data);
+//   }
+// });
+
+// iShopBoliviaLaPaz.subscribe({
+//   next: (data) => { console.log(data); },
+//   complete: () => { console.log('Se finalizo la transmision de datos.'); },
+//   error: (error) => { console.log('ERROR: ', error); } 
+// });
+
+iShopSubscriptions();
