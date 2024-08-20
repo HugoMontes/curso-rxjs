@@ -1,9 +1,8 @@
 import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
-import { iShopSubscriptions } from './ishop'
-import { coldSubscriptions } from './observables/cold-observable'
 import { hotdSubscriptions } from './observables/hot-observable'
+import { subscriptionCreateObservable } from './operators/create-observable'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -42,4 +41,5 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
 // iShopSubscriptions();
 // coldSubscriptions();
-hotdSubscriptions();
+// hotdSubscriptions();
+subscriptionCreateObservable();
