@@ -2,6 +2,7 @@ import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { iShopSubscriptions } from './ishop'
+import { coldSubscriptions } from './observables/cold-observable'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -38,4 +39,5 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 //   error: (error) => { console.log('ERROR: ', error); } 
 // });
 
-iShopSubscriptions();
+// iShopSubscriptions();
+coldSubscriptions();
