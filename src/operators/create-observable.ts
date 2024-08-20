@@ -6,8 +6,8 @@ import { from, of } from "rxjs";
 //   observer.next(3);
 // });
 
-const number = of(1, 2, 3);
-const number2 = from([1, 2, 3]);
+// const number = of(1, 2, 3);
+// const number2 = from([1, 2, 3]);
 
 interface IPerson {
   id: number;
