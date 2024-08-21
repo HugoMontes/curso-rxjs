@@ -2,6 +2,9 @@ import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { subscriptionOperatorConcat } from './operators/combine-observable/concat'
+import { subscriptionOperatorMap } from './operators/transform-operators/map'
+import { subscriptionOperatorConcatMap } from './operators/transform-operators/concat-map'
+import { subscriptionOperatorSwitchMap } from './operators/transform-operators/switch-map'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -42,4 +45,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 // coldSubscriptions();
 // hotdSubscriptions();
 // subscriptionCreateObservable();
-subscriptionOperatorConcat();
+// subscriptionOperatorConcat();
+// subscriptionOperatorMap();
+// subscriptionOperatorConcatMap();
+subscriptionOperatorSwitchMap();

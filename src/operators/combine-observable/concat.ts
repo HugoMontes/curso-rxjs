@@ -1,8 +1,8 @@
 import { concat, Observable, of } from "rxjs";
 
 // Creamos dos observables que emiten valores simples
-const observable1 = of(1, 2, 3);
-const observable2 = of("Hola");
+// const observable1 = of(1, 2, 3);
+// const observable2 = of("Hola");
 
 
 // Función para simular la creación de un usuario en el servidor
