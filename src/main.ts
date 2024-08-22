@@ -5,6 +5,7 @@ import { subscriptionOperatorConcat } from './operators/combine-observable/conca
 import { subscriptionOperatorMap } from './operators/transform-operators/map'
 import { subscriptionOperatorConcatMap } from './operators/transform-operators/concat-map'
 import { subscriptionOperatorSwitchMap } from './operators/transform-operators/switch-map'
+import { subscriptionOperatorFilter } from './operators/filters/filter'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -48,4 +49,5 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 // subscriptionOperatorConcat();
 // subscriptionOperatorMap();
 // subscriptionOperatorConcatMap();
-subscriptionOperatorSwitchMap();
+// subscriptionOperatorSwitchMap();
+subscriptionOperatorFilter();
