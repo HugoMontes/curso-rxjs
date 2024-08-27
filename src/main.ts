@@ -7,6 +7,7 @@ import { subscriptionOperatorConcatMap } from './operators/transform-operators/c
 import { subscriptionOperatorSwitchMap } from './operators/transform-operators/switch-map'
 import { subscriptionOperatorFilter } from './operators/filters/filter'
 import { subscriptionOperatorDebounceTime } from './operators/filters/deboucetime'
+import { subscriptionOperatorTakeUntil } from './operators/filters/take-util'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -52,4 +53,5 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 // subscriptionOperatorConcatMap();
 // subscriptionOperatorSwitchMap();
 // subscriptionOperatorFilter();
-subscriptionOperatorDebounceTime();
+// subscriptionOperatorDebounceTime();
+subscriptionOperatorTakeUntil();
