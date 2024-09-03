@@ -8,6 +8,7 @@ import { subscriptionOperatorSwitchMap } from './operators/transform-operators/s
 import { subscriptionOperatorFilter } from './operators/filters/filter'
 import { subscriptionOperatorDebounceTime } from './operators/filters/deboucetime'
 import { subscriptionOperatorTakeUntil } from './operators/filters/take-util'
+import { subscriptionOperatorCatchError } from './operators/errors/catch-error'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -54,4 +55,5 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 // subscriptionOperatorSwitchMap();
 // subscriptionOperatorFilter();
 // subscriptionOperatorDebounceTime();
-subscriptionOperatorTakeUntil();
+// subscriptionOperatorTakeUntil();
+subscriptionOperatorCatchError();
