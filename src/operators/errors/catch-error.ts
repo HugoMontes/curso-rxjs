@@ -1,4 +1,4 @@
-import { catchError, Observable, of } from "rxjs";
+import { catchError, Observable, of, throwError } from "rxjs";
 
 const source = new Observable<string>((observer) => {
   observer.next("Valor inicial");
@@ -10,7 +10,8 @@ export const subscriptionOperatorCatchError = () => {
   .pipe(
     catchError(() => {
       console.error('Error controlado desde el Operador');
-      return of({ code: 'ERR001', msg: 'Error controlado' });
+      // return of({ code: 'ERR001', msg: 'Error controlado' });
+      return throwError(() => "YA EJECUTE MI LOGICA, QUE SE PRODUZCA EL ERROR");
     })
   )  
   .subscribe({
