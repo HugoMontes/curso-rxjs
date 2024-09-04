@@ -1,3 +1,4 @@
+import { subscriptionMultipleOperatorsHttp } from './operators/multiple-operators/multiple-operators-http';
 import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
@@ -9,6 +10,7 @@ import { subscriptionOperatorFilter } from './operators/filters/filter'
 import { subscriptionOperatorDebounceTime } from './operators/filters/deboucetime'
 import { subscriptionOperatorTakeUntil } from './operators/filters/take-util'
 import { subscriptionOperatorCatchError } from './operators/errors/catch-error'
+import { subscriptionMultipleOperators } from './operators/multiple-operators/multiple-operators'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -56,4 +58,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 // subscriptionOperatorFilter();
 // subscriptionOperatorDebounceTime();
 // subscriptionOperatorTakeUntil();
-subscriptionOperatorCatchError();
+// subscriptionOperatorCatchError();
+// subscriptionMultipleOperators();
+subscriptionMultipleOperatorsHttp();
